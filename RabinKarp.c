@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <string.h>
-#define d 256
+#define d 127
 
 void rabinKarp(char pattern[], char text[], int q) {
     int m = strlen(pattern);
     int n = strlen(text);
     int i, j, p = 0, t = 0, h = 1;
 
-    for (i = 0; i < m - 1; i++){
+    for (i = 0; i< m - 1; i++){
         h = (h * d) % q;
     }
 
